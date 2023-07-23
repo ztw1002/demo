@@ -8,15 +8,14 @@
 <body>
   
   <script>
-    // 对象的解构赋值
-    const obj = {
-      name: 'ztw',
-      age: 18,
-      height: 1.11
-    }
+    foo(); // 输出 "Hello, World!"
 
-    const {name, age, height} = obj
-    console.log(name, age, height)
+function foo() {
+  console.log("Hello, World!");
+}
+
+var foo = "bar";
+console.log(foo)
   </script>
 </body>
 </html>
