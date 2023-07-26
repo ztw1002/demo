@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    //  closure:函数嵌套函数，内部函数就是闭包
+    function outerFun() {
+      let a = 10
+      function innerFun() {
+        console.log(a)
+      }
+      return innerFun
+    }
+
+    let fun = outerFun()
+    fun()
+
+    
+  </script>
+</body>
+</html>
